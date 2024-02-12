@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESUME BUILDER - Signup</title>
+    <link rel="stylesheet" type="text/css" href="css/login_style.css">
+</head>
+<body>
+
+    <div class="box">
+        <img src="image/LOgin.jpeg" class="user">
+        <h1>Sign up Here</h1>
+
+        <form name="signupForm">
+
+            <p>Username</p>
+            <input type="text" name="uname" placeholder="Enter Username" required="">
+
+            <p>Email</p>
+            <input type="email" name="email" placeholder="Enter email id" required="">
+
+            <p>Password</p>
+            <input type="password" name="upswd" placeholder="Enter Password" required="">
+
+            <button type="button" onclick="signup()">Submit</button>
+
+            <br><br>
+            <a href="login.html">Existing User? Login here</a>
+        </form>
+        
+    </div>
+
+    <script>
+        function signup() {
+            // Retrieve values from the signup form
+            var username = document.forms["signupForm"]["uname"].value;
+            var email = document.forms["signupForm"]["email"].value;
+            var password = document.forms["signupForm"]["upswd"].value;
+
+            // Save user information to Local Storage
+            sessionStorage.setItem("username", username);
+            sessionStorage.setItem("email", email);
+            sessionStorage.setItem("password", password);
+
+            // Redirect to the login page after successful signup
+            window.location.href = "login.html";
+        }
+    </script>
+
+</body>
+</html>

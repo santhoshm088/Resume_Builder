@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESUME BUILDER - Login</title>
+    <link rel="stylesheet" type="text/css" href="css/login_style.css">
+</head>
+<body>
+
+    <div class="box">
+        <img src="image/LOgin.jpeg" class="user">
+        <h1>Login Here</h1>
+
+        <form name="myform">
+
+            <p>Email</p>
+            <input type="email" name="email" placeholder="Enter Email id" required="">
+
+            <p>Password</p>
+            <input type="password" name="upswd" placeholder="Enter Password" required="">
+
+            <button type="button" onclick="login()">Submit</button>
+
+            <br><br>
+            <a href="signup.html">Sign up for a new account?</a>
+        </form>
+    </div>
+
+    <script>
+        function login() {
+            // Retrieve values from the login form
+            var loginEmail = document.forms["myform"]["email"].value;
+            var loginPassword = document.forms["myform"]["upswd"].value;
+
+            // Retrieve stored user information from Local Storage
+            var storedEmail = sessionStorage.getItem("email");
+            var storedPassword = sessionStorage.getItem("password");
+
+            // Compare login credentials
+            if (loginEmail === storedEmail && loginPassword === storedPassword) {
+                // Redirect to the home page after successful login
+                window.location.href = "home.html";
+            } else {
+                // Display an error message or handle the error as needed
+                alert("Incorrect email or password. Please try again.");
+            }
+        }
+    </script>
+
+</body>
+</html>

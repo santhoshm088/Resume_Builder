@@ -1,0 +1,98 @@
+body
+{
+    background-color: fff;
+}
+#resume-template
+{
+     display:none;    
+}
+.resumecontainer
+{
+    top: 30px;
+    box-sizing: border-box;
+    border: 1px solid slategrey;
+    max-height: 70%;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 100px;
+       
+}
+.resumecontainer h1,h2,h3,h4,h5{
+    text-transform: uppercase;
+}
+.resumecontainer .topside
+{
+    width: 600px;
+    height: 160px;
+    border: 1px solid black;
+    text-align: center;
+}
+.resumecontainer .leftside
+{
+    width: 240px;
+    /* border: 1px solid black; */
+    text-align: center;
+    float: left;
+}
+.resumecontainer .rightside
+{
+    /* border: 1px solid red; */
+    float: left;
+    width: 360px;
+}
+.resumecontainer .rightside .aboutmecontainer
+{
+    margin-top: 25px;
+    padding-left: 15px;
+
+}
+.resumecontainer .rightside .wecontainer
+{
+    margin-top: 25px;
+    padding-left: 15px;
+    
+}
+.resumecontainer .rightside .sscontainer
+{
+    margin-top: 25px;
+    padding-left: 15px;
+    
+}
+.resumecontainer .topside .links li
+{
+    display: inline-block;
+    padding-left:30px;
+    padding-right: 50px;
+}
+.resumecontainer .topside .links li a{
+    text-decoration: none;
+}
+.resumecontainer  hr
+{
+    /* border-width: 2px; */
+    height: 3px;
+     color: none;
+    /*background-color: black; */
+    
+}
+.myimg
+{
+    /*border: 1px solid red;*/
+    margin-top: 20px;
+    height: 170px;
+    width:170px;
+    border-radius: 50%;
+}
+.btn-primary
+{
+    background-color: rgb(47, 47, 247);
+}
+.background
+{
+    background-color: rgba(10, 10, 85, 0.797);
+    
+}
+.backgroundH
+{
+    color: rgba(10, 10, 85, 0.797);
+}

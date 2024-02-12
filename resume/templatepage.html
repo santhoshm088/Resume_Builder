@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/templatepage.css">
+    <title>RESUME BUILDER</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">home</a></li>
+                <li><a href="">Resume</a></li>
+                <!-- <li><a href="">about</a></li>
+                <li><a href="">contact</a></li> -->
+            </ul>
+            <div id="header">
+                <div class="box"> <a href="index.html" onclick="check()"><button> log out</button></a></div>
+            </div>
+        </nav>
+    </header>
+    <div id="container">
+        <div class="text">
+            <P>Select the template</P>
+        </div>
+            <div class="template_img">
+            <div class="img"><a href="form1.html"> <img src="image/templete1.jpg" alt="" width="300" height="400"></a></div>
+            <div class="img"><a href="form2.html"> <img src="image/template2.jpeg" alt="" width="300" height="400"></a></div>
+            </div>
+            <footer>
+                <p>click here! <a href="">customize resume</a></p>
+            </footer>
+        </div>
+       
+</body>
+<script src="js/jquery-1.11.3.min.js"> </script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/ie10-viewport-bug-woraround.js"></script>
+<script src="js/holder.min.js"></script>
+<script>
+    function check()
+    {
+        var result = confirm('Are you sure want to logout?');
+        if(result==false)
+        {
+            event.preventDefault();
+        }
+    }
+</script>
+</html>

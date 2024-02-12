@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
+*{
+    margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+
+}
+body{
+	position: relative;
+}
+nav{
+
+	width: 100%;
+	height: 60px;
+	background-color: #14baed;
+	line-height: 60px;
+	padding:0px 100px;
+	position:fixed;
+	z-index: 1;
+}
+
+nav ul{
+	float: left;
+}
+nav ul li{
+	display: inline-block;
+	list-style: none;
+}
+nav ul li a{
+	color:#fff;
+	text-decoration: none;
+	font-size: 18px;
+	text-transform: uppercase;
+	padding:0px 32px;
+    font-weight: 500;
+}
+nav ul li a:hover{
+	color:#d9f409;
+}
+
+nav #header
+{
+   float: right;
+}
+#header  
+{
+    display: flex;
+}
+
+.main {
+	height: 90vh;
+}
+
+.box button{
+    color:black;
+    background-color: rgb(47, 47, 247);
+	text-decoration: none;
+	font-size: 18px;
+	text-transform: uppercase;
+	padding: 4px ;  
+    margin-right: 10px;
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+}
+.box button:hover{
+   
+    background-color: rgb(20, 20, 203);
+ }
+
+ .video-container > video {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+ }
+
+ .video-container {
+	height: 99.5vh;
+	width:100%;
+ }
+/* 
+.back-video
+{
+   margin-top: 60px;
+   width: 100%;
+   height: 90vh;
+   bottom: 0;
+   z-index: -1;
+} */
+.container
+{
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+.container h1{
+	font-size: 70px;
+	text-align: center;
+	text-transform: uppercase;
+	color: rgb(47, 47, 254);
+	text-shadow: 2px 2px 2px black;
+	animation: myanimation 1s linear infinite;
+}
+   @keyframes myanimation {
+        from{
+            color:#14b9ea;
+        }
+        to{
+            color: rgb(47, 47, 254);
+        }
+        
+    }
+
+
+

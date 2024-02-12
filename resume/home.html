@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RESUME BULIDER</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initaial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/home_style.css">
+    
+</head>
+<body>
+   <div class="main">
+        
+	<nav>
+		<ul>
+			<li><a href="home.html">home</a></li>
+            <li><a href="templatepage.html">Resume</a></li>
+			<!-- <li><a href="">about</a></li>
+			<li><a href="">contact</a></li> -->
+		</ul>
+        <div id="header">
+            <div class="box"> <a href="index.html" onclick="check()"><button> log out</button></a></div>
+        </div>
+	</nav>
+
+    <div class="video-container">
+        <video autoplay muted loop  class="back-video">
+            <source src="video/video template.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    
+     <div class="container">
+        <h1>let's start!</h1>
+     </div>
+   </div>
+
+</body>
+<script src="js/jquery-1.11.3.min.js"> </script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/ie10-viewport-bug-woraround.js"></script>
+<script src="js/holder.min.js"></script>
+<script>
+    function check()
+    {
+        var result = confirm('Are you sure want to logout?');
+        if(result==false)
+        {
+            event.preventDefault();
+        }
+    }
+</script>
+</html> 
